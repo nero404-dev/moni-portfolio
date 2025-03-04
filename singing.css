@@ -1,0 +1,27 @@
+.singing {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.videos {
+    width: 95%;
+    margin: 20px auto;
+    justify-content: space-around;
+    column-count: 3;
+}
+
+.video {
+    width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+    .videos {
+        width: 90%;
+        margin: 20px auto;
+        justify-content: space-around;
+        column-count: 1;
+    }
+    .video {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,286 @@
+/* .poster {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.top_btn {
+    margin: 20px auto;
+    position: sticky;
+    top: 10px;
+    margin-left: 10px;
+    z-index: 4;
+}
+
+.top_btn a {
+    text-decoration: none;
+}
+
+.top_btn a button {
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    cursor: pointer;
+}
+
+.top_btn a button:hover {
+    border: 1px solid var(--navy);
+}
+
+.top_btn a button .fa {
+    font-size: 20px;
+}
+
+.wide_btn {
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.wide_btn button {
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wide_btn button:hover {
+    background-color: var(--yellow);
+}
+
+.cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 3;
+}
+
+.changed-cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 1;
+}
+
+.cat {
+    display: block;
+}
+
+.cat img {
+    width: 100%;
+} */
+
+.poster {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.top_btn {
+    margin: 20px auto;
+    position: sticky;
+    top: 10px;
+    margin-left: 10px;
+    z-index: 4;
+}
+
+.top_btn a {
+    text-decoration: none;
+}
+
+.top_btn a button {
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    cursor: pointer;
+}
+
+.top_btn a button:hover {
+    border: 1px solid var(--navy);
+}
+
+.top_btn a button .fa {
+    font-size: 20px;
+}
+
+.wide_btn {
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.wide_btn button {
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wide_btn button:hover {
+    background-color: var(--yellow);
+}
+
+.cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 3;
+}
+
+.changed-cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 2;
+}
+
+.cat {
+    display: block;
+}
+
+.cat .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.cat .myImg:hover {
+    opacity: 0.7;
+}
+
+.cat .changed-myImg {
+    border-radius: 0px;
+    cursor: pointer;
+    transition: unset;
+    width: 100%;
+}
+
+.cat .changed-myImg:hover {
+    opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 6;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: var(--navy);
+    /* Fallback color */
+    background-color: var(--navy_transparent);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: 10px auto 30px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--yellow);
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--yellow);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--grey_blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media screen and (max-width: 414px) {
+    .modal-content {
+        width: 100%;
+        max-width: 90%;
+    }
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 6;
+        /* Sit on top */
+        padding-top: 200px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        /* overflow: auto; */
+        /* Enable scroll if needed */
+        background-color: var(--navy);
+        /* Fallback color */
+        background-color: var(--navy_transparent);
+        /* Black w/ opacity */
+    }
+}
