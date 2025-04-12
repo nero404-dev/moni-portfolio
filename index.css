@@ -412,7 +412,7 @@ th, td {
         color: var(--navy);
         font-size: 13px;
     }
-    .all_slideshow {
+    .all_slideshow_container {
         margin: 20px auto;
         box-sizing: border-box;
         width: 90%;
