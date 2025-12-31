@@ -1,0 +1,36 @@
+.glass_painting {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.cats {
+    width: 95%;
+    margin: 20px auto;
+    /* display: flex; */
+    justify-content: space-around;
+    column-count: 3;
+}
+
+.cat {
+    width: 100%;
+}
+
+.cat .image {
+    width: 100%;
+}
+
+.cat .image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+    .cats {
+        width: 95%;
+        margin: 20px auto;
+        justify-content: space-around;
+        column-count: 1;
+    }
+    .cat .image {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,78 @@
+.packaging {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.top_btn {
+    margin: 20px auto;
+    position: sticky;
+    top: 10px;
+    margin-left: 10px;
+    z-index: 4;
+}
+
+.top_btn a {
+    text-decoration: none;
+}
+
+.top_btn a button {
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    cursor: pointer;
+}
+
+.top_btn a button:hover {
+    border: 1px solid var(--navy);
+}
+
+.top_btn a button .fa {
+    font-size: 20px;
+}
+
+.wide_btn {
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.wide_btn button {
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: var(--grey_blue);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wide_btn button:hover {
+    background-color: var(--yellow);
+}
+
+.cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 3;
+}
+
+.changed-cats {
+    width: 95%;
+    margin: 20px auto;
+    column-count: 1;
+}
+
+.cat {
+    display: block;
+}
+
+.cat img {
+    width: 100%;
+}
+
+/* .cat img:hover {
+    transform: scale(1.03);
+    transition-duration: 0.7s;
+} */

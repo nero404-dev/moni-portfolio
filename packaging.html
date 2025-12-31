@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packaging Design ~ Portfolio | Mounira Tarhini's Portfolio</title>
+    <link rel="stylesheet" href="packaging.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="nav_and_footer.css">
+    <script src="resp_nav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/general/moni's logo in cv LIU.PNG">
+</head>
+<body>  
+        <div class="back_btn">
+            <a href="portfolio.html"><button><i class="fa fa-chevron-left" aria-hidden="true"></i> Back to Portfolio</button></a>
+        </div>
+
+        <div class="packaging" id="packaging">
+            <h3 id="header">Packaging Design | Typography</h3>
+        </div>
+
+        <div class="top_btn">
+            <a href="#packaging"><button><i class="fa fa-arrow-up" aria-hidden="true"></i></button></a>
+          </div>
+
+        <div class="wide_btn">
+            <button id="toggleBtn">Screen View</button>
+        </div>
+
+        <div class="cats" id="myDiv">
+            <div class="cat">
+                <img src="pictures/project_imgs/m_packaging/DSC_1354.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1361.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1362.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1370.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1379.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1413.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1428.jpg">
+
+                <img src="pictures/project_imgs/m_packaging/DSC_1424.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1430.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1431.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1432.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1433.jpg">
+                <img src="pictures/project_imgs/m_packaging/DSC_1434.jpg">
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('toggleBtn').addEventListener('click', function () {
+                const myDiv = document.getElementById('myDiv');
+                myDiv.classList.toggle('changed-cats'); // Toggle the class on button click
+            });
+        </script>
+
+</body>
+</html>
